@@ -8,7 +8,7 @@ root.resizable(False,False)
 
 header = ttk.Label(root)
 message = ttk.Label(header, text="BOOMER")
-another = ttk.Label(header, text="BOOMER")
+another = ttk.Label(header, text="BooooOOMER")
 another.config(text = "DOOMER")
 
 header.pack()
