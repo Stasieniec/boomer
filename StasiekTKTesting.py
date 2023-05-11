@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
+from PIL import ImageTk, Image
 from utils import*
+
 
 root = tk.Tk()
 root.title("Boomer")

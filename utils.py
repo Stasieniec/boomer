@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from PIL import ImageTk, Image
 
 def make_header(root):
     '''
@@ -11,6 +12,8 @@ def make_header(root):
 
 
     '''
+
+    help = ImageTk.PhotoImage(Image.open("icons/help.png"))
     header_place = tk.Frame(root,
                   borderwidth=1,
                   relief="sunken",
@@ -19,11 +22,12 @@ def make_header(root):
     header.pack()
     lbl_test = tk.Label(header, text="BOOMER", bg="yellow")
     lbl_test.config(text = "DOOMER")
-    lbl_test.grid(row=0, column=0)
-    lbl_test2 = tk.Label(header, text="BooooOOMER", bg="yellow")
-    lbl_test2.grid(row = 0, column=1)
-    lbl_test3 = tk.Label(header, text="BooooOOMER", bg="yellow")
-    lbl_test3.grid(row = 0, column=2)
+    lbl_test.grid(column=0)
+    lbl_test2 = tk.Label(header, width=20, bg="yellow")
+    lbl_test2.grid(column=1)
+    lbl_test3 = tk.Label(header, image=help)
+    lbl_test3['image'] = help
+    lbl_test3.grid(column=2)
     return header_place
 
 
