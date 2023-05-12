@@ -1,0 +1,45 @@
+{
+    "AF": {
+      "definition": "Stands for 'as f**k', used to emphasize a statement",
+      "connected_words": ["cool", "extra", "lit"],
+      "subcultures": ["social media", "texting"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Bae": {
+      "definition": "Stands for 'before anyone else', babe, or baby; is used to describe a romantic partner or good friend",
+      "connected_words": ["boo", "crush", "GF/BF"],
+      "subcultures": ["romance", "dating"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Cheugy": {
+      "definition": "Something that is out of date or a person who is trying too hard",
+      "connected_words": ["basic", "lame", "cringe"],
+      "subcultures": ["fashion", "pop culture"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Dead": {
+      "definition": "Something is so funny that the speaker has 'died' of laughter",
+      "connected_words": ["LOL", "ROFL", "LMAO"],
+      "subcultures": ["humor", "memes"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Dope": {
+      "definition": "Cool or awesome",
+      "connected_words": ["fire", "sick", "wicked"],
+      "subcultures": ["hip hop", "street culture"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Extra": {
+      "definition": "Over-the-top, extreme",
+      "connected_words": ["dramatic", "excessive", "extra AF"],
+      "subcultures": ["reality TV", "celebrities"],
+      "age_group": ["teens", "young adults"]
+    },
+    "Fit": {
+      "definition": "(British) Short for outfit",
+      "connected_words": ["clothes", "style", "#OOTD"],
+      "subcultures": ["fashion", "#OOTD"],
+      "age_group": ["teens", "young adults"]
+    }
+  }
+  
