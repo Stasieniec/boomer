@@ -3,11 +3,15 @@ from tkinter import ttk
 from PIL import ImageTk, Image
 from utils import*
 
-
+#setting up the root window
 root = tk.Tk()
 root.title("Boomer")
-root.geometry('360x640+50+50')
+
+#it was 360x640 before
+root.geometry('393x852+50+50')
 root.resizable(False,False)
+
+
 
 header = make_header(root)
 header.pack(fill='x')
@@ -15,9 +19,6 @@ body = tk.Frame(root)
 footer = tk.Frame(root,
                   borderwidth=2,
                   relief="raised")
-
-
-
 
 btn = tk.Button(body,
                  text="CLICK ME",
