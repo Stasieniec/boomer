@@ -57,6 +57,16 @@ def make_header(root):
 def make_main_body(where):
     body_place = tk.Frame(where,
                   bg="white")
+    
+    #WORD OF THE DAY
+    _wotd = Image.open("icons/word_of_the_day.png")
+    #_wotd = _wotd.resize((137,137), Image.ANTIALIAS)
+    img_wotd= ImageTk.PhotoImage(_wotd)
+    wotd = tk.Label(body_place, image=img_wotd)
+    wotd.image = img_wotd
+    wotd.pack(pady=20)
+
+
     body = tk.Frame(body_place, bg="white")
     body.pack(pady=5)
 
@@ -117,5 +127,13 @@ def make_main_body(where):
               column = 1,
               padx=20,
               pady=20)
+    
+
+    _grandpa = Image.open("icons/grandpa.png")
+    #_wotd = _wotd.resize((137,137), Image.ANTIALIAS)
+    img_grandpa= ImageTk.PhotoImage(_grandpa)
+    grandpa = tk.Label(body_place, image=img_grandpa)
+    grandpa.image = img_grandpa
+    grandpa.pack()
 
     return body_place
