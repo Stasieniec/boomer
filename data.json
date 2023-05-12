@@ -1,45 +1,62 @@
 {
-    "AF": {
-      "definition": "Stands for 'as f**k', used to emphasize a statement",
-      "connected_words": ["cool", "extra", "lit"],
-      "subcultures": ["social media", "texting"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Bae": {
-      "definition": "Stands for 'before anyone else', babe, or baby; is used to describe a romantic partner or good friend",
-      "connected_words": ["boo", "crush", "GF/BF"],
-      "subcultures": ["romance", "dating"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Cheugy": {
-      "definition": "Something that is out of date or a person who is trying too hard",
-      "connected_words": ["basic", "lame", "cringe"],
-      "subcultures": ["fashion", "pop culture"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Dead": {
-      "definition": "Something is so funny that the speaker has 'died' of laughter",
-      "connected_words": ["LOL", "ROFL", "LMAO"],
-      "subcultures": ["humor", "memes"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Dope": {
-      "definition": "Cool or awesome",
-      "connected_words": ["fire", "sick", "wicked"],
-      "subcultures": ["hip hop", "street culture"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Extra": {
-      "definition": "Over-the-top, extreme",
-      "connected_words": ["dramatic", "excessive", "extra AF"],
-      "subcultures": ["reality TV", "celebrities"],
-      "age_group": ["teens", "young adults"]
-    },
-    "Fit": {
-      "definition": "(British) Short for outfit",
-      "connected_words": ["clothes", "style", "#OOTD"],
-      "subcultures": ["fashion", "#OOTD"],
-      "age_group": ["teens", "young adults"]
-    }
-  }
-  
+    "bruh": [
+        "an expression of disbelief or annoyance",
+        ["dude", "bro", "seriously"],
+        ["slang", "meme", "internet"],
+        [7, 8, 9]
+    ],
+    "fam": [
+        "short for family; used to refer to close friends or people you trust",
+        ["squad", "crew", "homies"],
+        ["slang", "hip hop", "internet"],
+        [10, 11, 12]
+    ],
+    "smh": [
+        "an acronym for shaking my head; used to express disappointment or disapproval",
+        ["facepalm", "eyeroll", "sigh"],
+        ["slang", "internet", "texting"],
+        [13, 14, 15]
+    ],
+    "snack": [
+        "someone who is very attractive or appealing",
+        ["hot", "cute", "yummy"],
+        ["slang", "dating", "compliment"],
+        [16, 17, 18]
+    ],
+    "mood": [
+        "a word or phrase that captures how one is feeling or what one wants to do",
+        ["same", "relatable", "vibe"],
+        ["slang", "meme", "internet"],
+        [19, 20, 21]
+    ],
+    "noob": [
+        "a beginner or inexperienced person, especially in gaming or online activities",
+        ["newbie", "rookie", "amateur"],
+        ["gaming", "slang", "internet"],
+        [7, 8, 9]
+    ],
+    "lit": [
+        "very exciting or amazing; also used to describe something that is on fire or very bright",
+        ["awesome", "cool", "fire"],
+        ["slang", "hip hop", "internet"],
+        [10, 11, 12]
+    ],
+    "shade": [
+        "a subtle or indirect insult or criticism",
+        ["diss", "roast", "drag"],
+        ["slang", "pop culture", "humor"],
+        [13, 14, 15]
+    ],
+    "savage": [
+        "someone who is very cool or impressive; also used to describe something that is very harsh or brutal",
+        ["boss", "beast", "ruthless"],
+        ["slang", "hip hop", "humor"],
+        [16, 17, 18]
+    ],
+    "flex": [
+        "to show off or boast about something",
+        ["brag", "flaunt", "showcase"],
+        ["slang", "hip hop", "internet"],
+        [19, 20, 21]
+    ]
+}
