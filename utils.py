@@ -151,6 +151,18 @@ def make_search_by_word(where):
     body = tk.Frame(body_place, bg="white")
     body.pack(pady=5)
 
+    entry = tk.Entry(body)
+    entry.pack()
+
+    _search = Image.open("icons/search.png")
+    img_search= ImageTk.PhotoImage(_search)
+    search = tk.Button(body,
+                      image=img_search,
+                      border=0,
+                      bg="white")
+    search.image = img_search
+    search.pack()
+
     
 
 
