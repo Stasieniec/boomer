@@ -72,7 +72,9 @@ def make_main_body(where):
                       bg="white")
     btn1.image = img_btn1
     btn1.grid(row = 0,
-              column = 0)
+              column = 0,
+              padx=20,
+              pady=20)
     
     #BUTTON 2
     _btn2 = Image.open("icons/btn2.png")
@@ -84,12 +86,36 @@ def make_main_body(where):
                       bg="white")
     btn2.image = img_btn2
     btn2.grid(row = 0,
-              column = 1)
-    btn3 = tk.Button(body, bg=yellow, text="SEARCH BY PAREMETERS")
+              column = 1,
+              padx=20,
+              pady=20)
+    
+    #BUTTON 3
+    _btn3 = Image.open("icons/btn3.png")
+    _btn3 = _btn3.resize((137,137), Image.ANTIALIAS)
+    img_btn3= ImageTk.PhotoImage(_btn3)
+    btn3 = tk.Button(body,
+                      image=img_btn3,
+                      border=0,
+                      bg="white")
+    btn3.image = img_btn3
     btn3.grid(row = 1,
-              column = 0)
-    btn4 = tk.Button(body, bg=yellow, text="SEARCH BY PAREMETERS")
+              column = 0,
+              padx=20,
+              pady=20)
+    
+    #BUTTON 4
+    _btn4 = Image.open("icons/btn4.png")
+    _btn4 = _btn4.resize((137,137), Image.ANTIALIAS)
+    img_btn4= ImageTk.PhotoImage(_btn4)
+    btn4 = tk.Button(body,
+                      image=img_btn4,
+                      border=0,
+                      bg="white")
+    btn4.image = img_btn4
     btn4.grid(row = 1,
-              column = 1)
+              column = 1,
+              padx=20,
+              pady=20)
 
     return body_place

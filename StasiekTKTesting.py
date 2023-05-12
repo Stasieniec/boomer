@@ -30,18 +30,5 @@ footer = tk.Frame(root,
                   borderwidth=2,
                   relief="raised")
 
-
-
-
-
-
-btn = tk.Button(body,
-                 text="CLICK ME",
-                 command=header.destroy,
-                 width=25,
-                 height=25)
-btn.pack()
-
-
 root.mainloop()
 
