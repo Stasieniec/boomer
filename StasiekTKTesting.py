@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import PIL
 from PIL import ImageTk, Image
 from utils import*
 
@@ -12,29 +13,35 @@ root.geometry('393x852+50+50')
 root.resizable(False,False)
 
 
-
 header = make_header(root)
 header.pack(fill='x')
-body = tk.Frame(root)
+
+
+_body = tk.Frame(root)
+_body.pack(fill='x')
+body = make_main_body(_body)
+body.pack(fill='x')
+
+
+
 footer = tk.Frame(root,
+                  bg="#F9E21B",
+                  pady=20,
                   borderwidth=2,
                   relief="raised")
 
+
+
+
+
+
 btn = tk.Button(body,
                  text="CLICK ME",
+                 command=header.destroy,
                  width=25,
                  height=25)
 btn.pack()
 
-message = tk.Label(footer,
-                     text="BOOMER",
-                     foreground="white",
-                     background="black",)
-message.pack()
 
-
-header.pack()
-body.pack()
-footer.pack()
 root.mainloop()
 
