@@ -3,6 +3,8 @@ from tkinter import ttk
 import PIL
 from PIL import ImageTk, Image
 
+from search import *
+
 #Global stuff
 Font_header = ("Alata", 32)
 Font_body = ("Alata", 20)
@@ -77,6 +79,7 @@ def make_main_body(where):
     _btn1 = _btn1.resize((137,137), Image.ANTIALIAS)
     img_btn1= ImageTk.PhotoImage(_btn1)
     btn1 = tk.Button(body,
+                     command=lambda: [body_place.destroy(), make_search_by_parameters(where=where)], # go to search by parameters
                       image=img_btn1,
                       border=0,
                       bg="white")
@@ -91,6 +94,7 @@ def make_main_body(where):
     _btn2 = _btn2.resize((137,137), Image.ANTIALIAS)
     img_btn2= ImageTk.PhotoImage(_btn2)
     btn2 = tk.Button(body,
+                     command=lambda: [body_place.destroy(), make_search_by_word(where=where)], # go to search by parameters
                       image=img_btn2,
                       border=0,
                       bg="white")
@@ -137,3 +141,19 @@ def make_main_body(where):
     grandpa.pack()
 
     return body_place
+
+
+
+
+def make_search_by_word(where):
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+    body = tk.Frame(body_place, bg="white")
+    body.pack(pady=5)
+
+    
+
+
+def make_search_by_parameters(where):
+    return 0
+
