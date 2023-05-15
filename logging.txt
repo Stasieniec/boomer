@@ -49,3 +49,7 @@
 00:00 clicked on search by word
 00:00 New session started @2023-05-15 23:11:20.054534
 00:01 clicked on search by word
+00:00 New session started @2023-05-15 23:25:30.483217
+00:01 clicked on search by word
+00:10 clicked on saved words
+00:17 clicked on saved words

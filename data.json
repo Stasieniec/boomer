@@ -138,7 +138,40 @@
         ["internet slang", "hip hop", "gen z"],
         [13, 14, 15],
         "word"
-    ]    
-    
-    
+    ],
+    "savage": [
+        "a slang term for someone who is tough, cool, or fearless",
+        ["badass", "beast", "boss"],
+        ["internet slang", "hip hop", "youth culture"],
+        [12, 13, 14, 15],
+        "word"
+        ],
+    "fomo": [
+        "an acronym for 'fear of missing out,' describing the anxiety or unease caused by the possibility of missing out on something exciting or interesting",
+        ["jomo", "yolo", "fobe"],
+        ["social media", "youth culture", "internet slang"],
+        [15, 16, 17, 18],
+        "word"
+        ],
+    "vibes": [
+        "a slang term referring to the atmosphere, energy, or overall feeling of a person, place, or thing",
+        ["mood", "energy", "aura"],
+        ["youth culture", "music", "social media"],
+        [13, 14, 15, 16],
+        "word"
+        ],
+    "clout": [
+        "a slang term for influence, popularity, or social status",
+        ["swag", "influence", "status"],
+        ["social media", "internet culture", "youth slang"],
+        [14, 15, 16, 17],
+        "word"
+        ],
+    "cancel culture": [
+        "a term describing the practice of boycotting or publicly shaming individuals or companies for perceived offensive or controversial behavior",
+        ["call-out culture", "online backlash", "internet activism"],
+        ["social media", "internet culture", "youth movements"],
+        [16, 17, 18],
+        "topic"
+        ]
 }
