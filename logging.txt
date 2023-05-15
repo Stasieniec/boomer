@@ -38,3 +38,14 @@
 00:00 New session started @2023-05-15 22:48:16.947924
 00:00 New session started @2023-05-15 22:51:40.781911
 00:04 clicked on search by word
+00:00 New session started @2023-05-15 23:07:54.521248
+00:01 clicked on search by word
+00:00 New session started @2023-05-15 23:08:56.630636
+00:01 clicked on search by age
+00:04 clicked on search by word
+00:00 New session started @2023-05-15 23:10:17.367637
+00:01 clicked on search by word
+00:00 New session started @2023-05-15 23:10:44.923884
+00:00 clicked on search by word
+00:00 New session started @2023-05-15 23:11:20.054534
+00:01 clicked on search by word
