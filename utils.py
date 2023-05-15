@@ -213,9 +213,40 @@ def results_search_by_word(where, s_word: str):
               column = 1,
               padx=20,
               pady=20)
+    
 
-    #Here is the definition of the word and
-    print(word)
+    #Here is the definition of the word and the rest of this stuff
+    body2 = tk.Frame(body_place, bg="white")
+    body2.pack(pady=5)
+
+    lbl_definition = tk.Label(body2,
+                              text=str(word_info[0]),
+                              fg='black',
+                              bg=yellow)
+    lbl_definition.pack(fill='x',
+                        pady=10)
+
+    lbl_related_words = tk.Label(body2,
+                              text=str(', '.join(x for x in word_info[1])),
+                              fg='black',
+                              bg=yellow)
+    lbl_related_words.pack(fill='x',
+                           pady=10)
+
+    lbl_subculture = tk.Label(body2,
+                              text=str(', '.join(x for x in word_info[2])),
+                              fg='black',
+                              bg=yellow)
+    lbl_subculture.pack(fill='x',
+                           pady=10)
+    
+    lbl_ages = tk.Label(body2,
+                              text=str(', '.join(x for x in word_info[3])),
+                              fg='black',
+                              bg=yellow)
+    lbl_ages.pack(fill='x',
+                  pady=10)
+
 
 
 def make_search_by_parameters(where):
