@@ -6,6 +6,17 @@ with open("data.json", "r") as f:
   words = json.load(f)
 
 
+with open("saved_words.txt", "r") as f:
+  saved_words = []
+  for line in f:
+    saved_words.append(line.strip())
+
+
+def add_saved_word(word): 
+  with open("saved_words.txt", "a") as f:
+    f.write(word + '\n')
+
+
 def is_in_dataset(searched_word: str):
   if searched_word in words:
     return True
