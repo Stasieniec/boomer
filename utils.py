@@ -324,13 +324,21 @@ def results_search_by_age(where, start_age, end_age):
     int_start_age = int(start_age)
     int_end_age = int(end_age)
 
+    #sorting fitting words
     fitting_words = search_by_age(start_age=int_start_age, end_age=int_end_age)
     displayed_words = []
+    displayed_topics = []
+    displayed_activities = []
+    displayed_personalities = []
     for x in fitting_words:
         if x[5] == "word":
             displayed_words.append(x[0])
-
-    print(fitting_words)
+        elif x[5] == "topic":
+            displayed_topics.append(x[0])
+        elif x[5] == "activity":
+            displayed_activities.append(x[0])
+        elif x[5] == "person":
+            displayed_personalities.append(x[0])
 
     body_place = tk.Frame(where, bg = 'white')
     body_place.pack(fill='x')
@@ -347,18 +355,68 @@ def results_search_by_age(where, start_age, end_age):
     lbl_age.image = img_age
     lbl_age.pack(pady=10)
 
-
+    #popular words
+    #header
     _pop_words = Image.open("icons/popular_words.png")
     img_pop_words= ImageTk.PhotoImage(_pop_words)
     
-    lbl_pop_words = tk.Label(body1,
+    h_pop_words = tk.Label(body1,
                       image=img_pop_words,
                       border=0,
                       bg="white")
-    lbl_pop_words.image = img_pop_words
-    lbl_pop_words.pack(pady=5)
+    h_pop_words.image = img_pop_words
+    h_pop_words.pack(pady=5)
 
+    #label
     lbl_words = tk.Label(body1,
                          text= ', '.join(x for x in displayed_words))
     lbl_words.pack()
 
+    #popular topics
+    #header
+    _topics = Image.open("icons/topics.png")
+    img_topics= ImageTk.PhotoImage(_topics)
+    
+    h_topics = tk.Label(body1,
+                      image=img_topics,
+                      border=0,
+                      bg="white")
+    h_topics.image = img_topics
+    h_topics.pack(pady=5)
+    #label
+    lbl_topics = tk.Label(body1,
+                         text= ', '.join(x for x in displayed_topics))
+    lbl_topics.pack()
+
+    #popular activities
+    #header
+    _activities = Image.open("icons/activities.png")
+    img_activities= ImageTk.PhotoImage(_activities)
+    
+    h_activities = tk.Label(body1,
+                      image=img_activities,
+                      border=0,
+                      bg="white")
+    h_activities.image = img_activities
+    h_activities.pack(pady=5)
+    #label
+    lbl_activities = tk.Label(body1,
+                         text= ', '.join(x for x in displayed_activities))
+    lbl_activities.pack()
+
+
+    #popular personalities
+    #header
+    _people = Image.open("icons/people.png")
+    img_people= ImageTk.PhotoImage(_people)
+    
+    h_people = tk.Label(body1,
+                      image=img_people,
+                      border=0,
+                      bg="white")
+    h_people.image = img_people
+    h_people.pack(pady=5)
+    #label
+    lbl_people = tk.Label(body1,
+                         text= ', '.join(x for x in displayed_personalities))
+    lbl_people.pack()
