@@ -325,13 +325,40 @@ def results_search_by_age(where, start_age, end_age):
     int_end_age = int(end_age)
 
     fitting_words = search_by_age(start_age=int_start_age, end_age=int_end_age)
+    displayed_words = []
+    for x in fitting_words:
+        if x[5] == "word":
+            displayed_words.append(x[0])
+
+    print(fitting_words)
 
     body_place = tk.Frame(where, bg = 'white')
     body_place.pack(fill='x')
     body1 = tk.Frame(body_place, bg="white")
     body1.pack(pady=5)
 
+    _age = Image.open("icons/age_search.png")
+    img_age= ImageTk.PhotoImage(_age)
+    
+    lbl_age = tk.Label(body1,
+                      image=img_age,
+                      border=0,
+                      bg="white")
+    lbl_age.image = img_age
+    lbl_age.pack(pady=10)
+
+
+    _pop_words = Image.open("icons/popular_words.png")
+    img_pop_words= ImageTk.PhotoImage(_pop_words)
+    
+    lbl_pop_words = tk.Label(body1,
+                      image=img_pop_words,
+                      border=0,
+                      bg="white")
+    lbl_pop_words.image = img_pop_words
+    lbl_pop_words.pack(pady=5)
+
     lbl_words = tk.Label(body1,
-                         text= ', '.join(x for x in fitting_words))
+                         text= ', '.join(x for x in displayed_words))
     lbl_words.pack()
 
