@@ -348,12 +348,13 @@ def results_search_by_age(where, start_age, end_age):
     _age = Image.open("icons/age_search.png")
     img_age= ImageTk.PhotoImage(_age)
     
-    lbl_age = tk.Label(body1,
+    btn_age = tk.Button(body1,
+                        command= lambda: [body_place.destroy(), make_search_by_parameters(where)],
                       image=img_age,
                       border=0,
                       bg="white")
-    lbl_age.image = img_age
-    lbl_age.pack(pady=10)
+    btn_age.image = img_age
+    btn_age.pack(pady=10)
 
     #popular words
     #header

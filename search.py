@@ -22,7 +22,6 @@ def search_by_age(start_age, end_age):
     ages = words[word][3]
     is_in = False
     for age in ages:
-      print(age)
       if age >= start_age and age <= end_age:
         is_in = True
       
