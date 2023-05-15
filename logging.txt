@@ -1,31 +1,8 @@
-00:00 New session started @2023-05-12 18:27:03.700038
-00:02 white
-00:03 white
-00:04 white
-00:39 white
-00:48 setcursor: spider
-00:49 setcursor: clock
-00:49 setcursor: clock
-00:49 white
-00:49 white
-00:51 setcursor: spider
-00:52 setcolor: Red
-00:52 setcolor: Yellow
-00:52 setcursor: spider
-00:53 setcursor: clock
-00:54 setcolor: Yellow
-00:54 setcolor: Red
-00:56 setcolor: Red
-00:57 setcursor: spider
-00:57 setcursor: clock
-00:57 setcolor: Yellow
-00:59 setcursor: clock
-01:00 setcursor: spider
-01:02 setcolor: Red
-01:03 setcolor: Yellow
-01:04 setcolor: Red
-01:05 setcolor: Yellow
-02:48 setcursor: clock
-02:49 setcursor: spider
-02:51 white
-02:52 setcolor: Yellow
+00:00 New session started @2023-05-15 21:57:35.747036
+00:00 New session started @2023-05-15 21:57:47.907605
+00:00 New session started @2023-05-15 21:58:32.217596
+00:00 New session started @2023-05-15 21:58:35.486097
+00:01 clicked on search by parameters
+00:00 New session started @2023-05-15 22:08:07.239365
+00:06 clicked on dictionary
+00:08 clicked on search by age

@@ -2,14 +2,39 @@ import tkinter as tk
 from tkinter import ttk
 import PIL
 from PIL import ImageTk, Image
+from datetime import datetime
+from datetime import date 
 
 from search import *
+
 
 #Global stuff
 Font_header = ("Alata", 32)
 Font_body = ("Alata", 20)
 yellow = '#F9E21B'
 
+
+def logaction(logtext):
+    # Appends a line with logtext to the logfile, adds how long running
+    # the experiment it is in minutes and seconds.
+    ct = datetime.timestamp(datetime.now()) - starttime
+
+    # Determine minutes and seconds, another divmod could be used to also
+    # include hours
+    m, s = divmod(int(ct), 60)
+
+    # String formating is used to nicely display the timestamps
+    timestr = f'{m:02d}:{s:02d}'
+    logfile.write(timestr + ' ' + logtext + '\n')
+
+# Getting the current date and time for the logging of user interction
+startdatetime = datetime.now()
+# Convert start date to seconds so we can use it for calculations.
+starttime = datetime.timestamp(startdatetime)
+
+# Opening the logfile and append to it to indicate a new session.
+logfile = open('logging.txt', 'a')
+logaction('New session started @' + str(startdatetime))
 
 
 def make_header(root):
@@ -72,13 +97,12 @@ def make_main_body(where):
     body.pack(pady=5)
 
     #Adding buttons: to make them pretty, they have to be images.
-
     #BUTTON 1
     _btn1 = Image.open("icons/btn1.png")
     _btn1 = _btn1.resize((137,137), Image.ANTIALIAS)
     img_btn1= ImageTk.PhotoImage(_btn1)
     btn1 = tk.Button(body,
-                     command=lambda: [body_place.destroy(), make_search_by_parameters(where=where)], # go to search by parameters
+                     command=lambda: [body_place.destroy(), make_search_by_parameters(where=where), logaction('clicked on search by age')], # go to search by parameters
                       image=img_btn1,
                       border=0,
                       bg="white")
@@ -93,7 +117,7 @@ def make_main_body(where):
     _btn2 = _btn2.resize((137,137), Image.ANTIALIAS)
     img_btn2= ImageTk.PhotoImage(_btn2)
     btn2 = tk.Button(body,
-                     command=lambda: [body_place.destroy(), make_search_by_word(where=where)], # go to search by parameters
+                     command=lambda: [body_place.destroy(), make_search_by_word(where=where), logaction('clicked on search by word')], # go to search by parameters
                       image=img_btn2,
                       border=0,
                       bg="white")
@@ -108,7 +132,7 @@ def make_main_body(where):
     _btn3 = _btn3.resize((137,137), Image.ANTIALIAS)
     img_btn3= ImageTk.PhotoImage(_btn3)
     btn3 = tk.Button(body,
-                     command=lambda: [body_place.destroy(), make_saved_words(where=where)], # go to saved words
+                     command=lambda: [body_place.destroy(), make_saved_words(where=where), logaction('clicked on saved words')], # go to saved words
                       image=img_btn3,
                       border=0,
                       bg="white")
@@ -123,6 +147,7 @@ def make_main_body(where):
     _btn4 = _btn4.resize((137,137), Image.ANTIALIAS)
     img_btn4= ImageTk.PhotoImage(_btn4)
     btn4 = tk.Button(body,
+                     command=lambda: logaction('clicked on dictionary'),
                       image=img_btn4,
                       border=0,
                       bg="white")
