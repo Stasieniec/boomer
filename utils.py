@@ -302,5 +302,36 @@ def make_search_by_parameters(where):
     lbl_years2.grid(row=1,
                   column=2)
     
-    return 0
+    body3 = tk.Frame(body_place)
+    body3.pack()
+
+    _search = Image.open("icons/search.png")
+    img_search= ImageTk.PhotoImage(_search)
+    search = tk.Button(body3,
+                       command= lambda: [body_place.destroy(), results_search_by_age(where, s_start_age.get(), s_end_age.get())],
+                       #TODO Display an error message if there is no such word in the dataset.
+                       image=img_search,
+                       border=0,
+                       bg="white",
+                       padx=20,
+                       pady=20)
+    search.image = img_search
+    search.pack()
+
+
+
+def results_search_by_age(where, start_age, end_age):
+    int_start_age = int(start_age)
+    int_end_age = int(end_age)
+
+    fitting_words = search_by_age(start_age=int_start_age, end_age=int_end_age)
+
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+    body1 = tk.Frame(body_place, bg="white")
+    body1.pack(pady=5)
+
+    lbl_words = tk.Label(body1,
+                         text= ', '.join(x for x in fitting_words))
+    lbl_words.pack()
 

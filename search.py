@@ -25,8 +25,9 @@ def search_by_word(searched_word: str):
 def search_by_age(start_age, end_age):
   list_of_results = []
   for word in words:
-    ages = word[3]
+    ages = words[word][3]
     for age in ages:
+      print(age)
       if age >= start_age and age <= end_age:
         list_of_results.append(word)
 
