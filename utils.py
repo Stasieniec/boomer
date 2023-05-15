@@ -37,6 +37,7 @@ logaction('New session started @' + str(startdatetime))
 
 
 def return_home(what):
+    logaction('user returned home')
     for child in what.winfo_children():
       child.destroy()
 
@@ -231,6 +232,7 @@ def input_error(where):
     
 
 def results_search_by_word(where, s_word: str):
+    logaction('search results were generated for searching by word')
     s_word = s_word.lower()
     word_info = search_by_word(s_word)
 
@@ -256,7 +258,7 @@ def results_search_by_word(where, s_word: str):
     img_save= ImageTk.PhotoImage(_save)
     
     btn_save = tk.Button(body1,
-                         command=lambda: add_saved_word(s_word),
+                         command=lambda: [add_saved_word(s_word), logaction('user saved a word')],
                       image=img_save,
                       border=0,
                       bg="white")
@@ -272,28 +274,28 @@ def results_search_by_word(where, s_word: str):
     body2.pack(pady=5)
 
     lbl_definition = tk.Label(body2,
-                              text='Definition: \n' + str(word_info[0]),
+                              text='Definition: \n' + str(word_info[1]),
                               fg='black',
                               bg=yellow)
     lbl_definition.pack(fill='none',
                         pady=10)
 
     lbl_related_words = tk.Label(body2,
-                              text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
+                              text=str('Related words: \n' + ', '.join(x for x in word_info[2])),
                               fg='black',
                               bg=yellow)
     lbl_related_words.pack(fill='x',
                            pady=10)
 
     lbl_subculture = tk.Label(body2,
-                              text=str('Related subculture: \n'+', '.join(x for x in word_info[2])),
+                              text=str('Related subculture: \n'+', '.join(x for x in word_info[3])),
                               fg='black',
                               bg=yellow)
     lbl_subculture.pack(fill='x',
                            pady=10)
     
     lbl_ages = tk.Label(body2,
-                              text='Age of people who use that word: \n'+str(', '.join(str(x) for x in word_info[3])),
+                              text='Age of people who use that word: \n'+str(', '.join(str(x) for x in word_info[4])),
                               fg='black',
                               bg=yellow)
     lbl_ages.pack(fill='x',
@@ -373,6 +375,7 @@ def make_search_by_parameters(where):
 
 
 def results_search_by_age(where, start_age, end_age):
+    logaction('search results were generated for search by age')
     int_start_age = int(start_age)
     int_end_age = int(end_age)
 

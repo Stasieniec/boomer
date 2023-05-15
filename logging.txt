@@ -53,3 +53,22 @@
 00:01 clicked on search by word
 00:10 clicked on saved words
 00:17 clicked on saved words
+00:00 New session started @2023-05-15 23:34:39.597890
+00:01 clicked on search by age
+00:03 search results were generated for search by age
+00:08 user returned home
+00:09 clicked on dictionary
+00:10 clicked on saved words
+00:11 search results were generated for searching by word
+00:15 user returned home
+00:17 clicked on search by age
+00:19 user returned home
+00:19 clicked on search by word
+00:22 search results were generated for searching by word
+00:00 New session started @2023-05-15 23:35:41.640491
+00:01 clicked on search by age
+00:05 search results were generated for search by age
+00:15 user returned home
+00:16 clicked on search by word
+00:19 search results were generated for searching by word
+00:26 user returned home
