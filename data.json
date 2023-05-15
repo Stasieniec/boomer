@@ -103,8 +103,42 @@
         ["internet slang", "meme culture", "hip hop"],
         [11, 12, 13, 14],
         "word"
-    ]
-    
+    ],
+    "flex": [
+        "a slang term for showing off or boasting about something",
+        ["brag", "flaunt", "showboat"],
+        ["internet slang", "hip hop", "social media"],
+        [13, 14, 15, 16],
+        "word"
+    ],
+    "star wars": [
+        "a popular sci-fi franchise that features movies, books, games, and merchandise set in a galaxy far, far away",
+        ["star trek", "lord of the rings", "marvel"],
+        ["sci-fi", "fandoms", "nerd culture"],
+        [10, 11, 12, 13, 14, 15],
+        "topic"
+    ],
+    "basketball": [
+        "a sport that involves shooting a ball into a hoop",
+        ["soccer", "football", "baseball"],
+        ["sports", "nba", "athletes"],
+        [9, 10, 11, 12, 13],
+        "activity"
+    ],
+    "ariana grande": [
+        "a famous American singer and actress who is known for her powerful vocals and catchy songs",
+        ["selena gomez", "taylor swift", "demi lovato"],
+        ["pop music", "celebrities", "arianators"],
+        [14, 15, 16, 17],
+        "person"
+    ],
+    "no cap": [
+        "a slang term for expressing honesty or sincerity",
+        ["for real", "no lie", "facts"],
+        ["internet slang", "hip hop", "gen z"],
+        [13, 14, 15],
+        "word"
+    ]    
     
     
 }
