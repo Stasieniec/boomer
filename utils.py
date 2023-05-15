@@ -250,5 +250,57 @@ def results_search_by_word(where, s_word: str):
 
 
 def make_search_by_parameters(where):
+    s_start_age = tk.StringVar()
+    s_end_age = tk.StringVar()
+
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+    body1 = tk.Frame(body_place, bg="white")
+    body1.pack(pady=5)
+
+
+    _age = Image.open("icons/age_range.png")
+    img_age= ImageTk.PhotoImage(_age)
+    
+    lbl_age = tk.Label(body1,
+                      image=img_age,
+                      border=0,
+                      bg="white")
+    lbl_age.image = img_age
+    lbl_age.pack()
+
+    body2 = tk.Frame(body_place, bg='white')
+    body2.pack()
+
+    lbl_from = tk.Label(body2,
+                        text="from")
+    lbl_from.grid(row=0,
+                  column=0)
+    
+    entr_start_age = tk.Entry(body2,
+                              textvariable=s_start_age)
+    entr_start_age.grid(row=0,
+                        column=1)
+    
+    lbl_years1= tk.Label(body2,
+                        text="years")
+    lbl_years1.grid(row=0,
+                  column=2)
+    
+    lbl_to = tk.Label(body2,
+                        text="to")
+    lbl_to.grid(row=1,
+                  column=0)
+    
+    entr_start_age = tk.Entry(body2,
+                              textvariable=s_end_age)
+    entr_start_age.grid(row=1,
+                        column=1)
+    
+    lbl_years2= tk.Label(body2,
+                        text="years")
+    lbl_years2.grid(row=1,
+                  column=2)
+    
     return 0
 
