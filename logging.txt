@@ -36,3 +36,5 @@
 00:00 New session started @2023-05-15 22:46:11.349093
 00:01 clicked on search by age
 00:00 New session started @2023-05-15 22:48:16.947924
+00:00 New session started @2023-05-15 22:51:40.781911
+00:04 clicked on search by word
