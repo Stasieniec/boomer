@@ -1,62 +1,110 @@
 {
-    "bruh": [
-        "an expression of disbelief or annoyance",
-        ["dude", "bro", "seriously"],
-        ["slang", "meme", "internet"],
-        [7, 8, 9]
+    "yeet": [
+        "an exclamation of excitement or approval",
+        ["yolo", "woohoo", "yay"],
+        ["meme culture", "internet slang", "hip hop"],
+        [10, 11, 12, 13, 14],
+        "word"
     ],
-    "fam": [
-        "short for family; used to refer to close friends or people you trust",
-        ["squad", "crew", "homies"],
-        ["slang", "hip hop", "internet"],
-        [10, 11, 12]
+    "stan": [
+        "a fan or admirer of a celebrity or a subculture",
+        ["fanboy", "fangirl", "superfan"],
+        ["pop culture", "social media", "fandoms"],
+        [12, 13, 14, 15, 16],
+        "word"
     ],
-    "smh": [
-        "an acronym for shaking my head; used to express disappointment or disapproval",
-        ["facepalm", "eyeroll", "sigh"],
-        ["slang", "internet", "texting"],
-        [13, 14, 15]
+    "tiktok": [
+        "a social media platform for creating and sharing short videos",
+        ["instagram", "snapchat", "youtube"],
+        ["influencers", "content creators", "viral trends"],
+        [10, 11, 12, 13, 14, 15],
+        "topic"
     ],
-    "snack": [
-        "someone who is very attractive or appealing",
-        ["hot", "cute", "yummy"],
-        ["slang", "dating", "compliment"],
-        [16, 17, 18]
+    "dab": [
+        "a dance move that involves raising one arm and dropping the head into the bent elbow of the other arm",
+        ["whip", "nae nae", "floss"],
+        ["dance culture", "hip hop", "sports"],
+        [9, 10, 11, 12],
+        "activity"
     ],
-    "mood": [
-        "a word or phrase that captures how one is feeling or what one wants to do",
-        ["same", "relatable", "vibe"],
-        ["slang", "meme", "internet"],
-        [19, 20, 21]
-    ],
-    "noob": [
-        "a beginner or inexperienced person, especially in gaming or online activities",
-        ["newbie", "rookie", "amateur"],
-        ["gaming", "slang", "internet"],
-        [7, 8, 9]
+    "bts": [
+        "a popular South Korean boy band that performs pop music with elements of hip hop and R&B",
+        ["exo", "blackpink", "one direction"],
+        ["k-pop", "music industry", "army"],
+        [13, 14, 15, 16, 17],
+        "person"
     ],
     "lit": [
-        "very exciting or amazing; also used to describe something that is on fire or very bright",
+        "a slang term for something that is exciting, fun, or amazing",
         ["awesome", "cool", "fire"],
-        ["slang", "hip hop", "internet"],
-        [10, 11, 12]
+        ["party culture", "hip hop", "internet slang"],
+        [13, 14, 15, 16, 17],
+        "word"
     ],
-    "shade": [
-        "a subtle or indirect insult or criticism",
-        ["diss", "roast", "drag"],
-        ["slang", "pop culture", "humor"],
-        [13, 14, 15]
+    "meme": [
+        "a humorous image, video, or text that is copied and spread online, often with slight variations",
+        ["gif", "vine", "joke"],
+        ["meme culture", "internet humor", "social media"],
+        [10, 11, 12, 13, 14, 15, 16],
+        "topic"
     ],
-    "savage": [
-        "someone who is very cool or impressive; also used to describe something that is very harsh or brutal",
-        ["boss", "beast", "ruthless"],
-        ["slang", "hip hop", "humor"],
-        [16, 17, 18]
+    "fortnite": [
+        "a popular online video game that involves shooting and building structures",
+        ["minecraft", "pubg", "roblox"],
+        ["gaming culture", "streamers", "esports"],
+        [9, 10, 11, 12, 13],
+        "activity"
     ],
-    "flex": [
-        "to show off or boast about something",
-        ["brag", "flaunt", "showcase"],
-        ["slang", "hip hop", "internet"],
-        [19, 20, 21]
+    "billie eilish": [
+        "a young American singer and songwriter who is known for her dark and edgy style of music",
+        ["lana del rey", "lorde", "halsey"],
+        ["pop music", "alternative music", "gen z"],
+        [14, 15, 16, 17],
+        "person"
+    ],
+    "sksksk": [
+        "a slang term for laughter or surprise that is often used by fans of the vsco girl aesthetic",
+        ["lol", "omg", "lmao"],
+        ["vsco girl", "internet slang", "tiktok"],
+        [11, 12, 13],
+        "word"
+    ],
+    "tea": [
+        "a slang term for gossip, drama, or juicy information",
+        ["shade", "spill", "dirt"],
+        ["pop culture", "internet slang", "social media"],
+        [14, 15, 16, 17],
+        "word"
+    ],
+    "anime": [
+        "a style of animation that originated in Japan and features colorful graphics and often complex plots and characters",
+        ["manga", "cartoon", "cosplay"],
+        ["anime culture", "otaku", "weeb"],
+        [12, 13, 14, 15, 16],
+        "topic"
+    ],
+    "skateboarding": [
+        "a sport that involves riding and performing tricks on a skateboard",
+        ["surfing", "snowboarding", "bmx"],
+        ["skate culture", "extreme sports", "street art"],
+        [10, 11, 12, 13, 14],
+        "activity"
+    ],
+    "emma chamberlain": [
+        "a famous American youtuber and influencer who is known for her relatable and quirky videos",
+        ["james charles", "david dobrik", "jenna marbles"],
+        ["youtube", "vlogging", "gen z"],
+        [13, 14, 15, 16],
+        "person"
+    ],
+    "bruh": [
+        "a slang term for expressing disbelief, annoyance, or amusement",
+        ["dude", "bro", "smh"],
+        ["internet slang", "meme culture", "hip hop"],
+        [11, 12, 13, 14],
+        "word"
     ]
+    
+    
+    
 }
