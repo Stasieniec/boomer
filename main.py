@@ -10,8 +10,6 @@ from utils import*
 
 
 
-
-
 #setting up the root window
 root = tk.Tk()
 root.title("Boomer")
@@ -39,4 +37,3 @@ footer = tk.Frame(root,
                   relief="raised")
 
 root.mainloop()
-

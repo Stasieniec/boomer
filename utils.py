@@ -13,7 +13,6 @@ Font_header = ("Alata", 32)
 Font_body = ("Alata", 20)
 yellow = '#F9E21B'
 
-
 def logaction(logtext):
     # Appends a line with logtext to the logfile, adds how long running
     # the experiment it is in minutes and seconds.
@@ -37,6 +36,17 @@ logfile = open('logging.txt', 'a')
 logaction('New session started @' + str(startdatetime))
 
 
+def return_home(what):
+    for child in what.winfo_children():
+      child.destroy()
+
+    header = make_header(what)
+    header.pack(fill='x')
+    _body = tk.Frame(what)
+    _body.pack(fill='x')
+    body = make_main_body(_body)
+    body.pack(fill='x')
+
 def make_header(root):
     '''
     Creates a place for a for a header and fills it up with a grid.
@@ -50,14 +60,29 @@ def make_header(root):
                   bg=yellow)
     header = tk.Frame(header_place, bg=yellow)
     header.pack(pady=5)
+
+    _home = Image.open("icons/home.png")
+    _home = _home.resize((46,46), Image.ANTIALIAS)
+    img_home= ImageTk.PhotoImage(_home)
+    btn_home = tk.Button(header,
+                         image=img_home,
+                         bg=yellow,
+                         border=0,
+                         command=lambda: return_home(root))
+    btn_home.image = img_home
+    btn_home.grid(row=0, column=0)
+
+
+
+
     lbl_name = tk.Label(header, text="BOOMER", font=Font_header, bg=yellow)
     lbl_name.grid(row = 0,
-                  column=0
+                  column=1,
                   )
     
-    lbl_blank = tk.Label(header, bg=yellow, width=10)
+    lbl_blank = tk.Label(header, bg=yellow, width=2)
     lbl_blank.grid(row = 0,
-                  column=1
+                  column=2
                   )
     
     _help = Image.open("icons/help.png")
@@ -66,7 +91,7 @@ def make_header(root):
     lbl_help = tk.Label(header, image=help, bg=yellow)
     lbl_help.image = help #This is weird, but it needs to be done, otherwise python forgets about the image and displays a blank spot.
     lbl_help.grid(row=0,
-                  column=2)
+                  column=3)
     
     _settings = Image.open("icons/settings.png")
     _settings = _settings.resize((46,46), Image.ANTIALIAS)
@@ -74,7 +99,7 @@ def make_header(root):
     lbl_settings = tk.Label(header, image=settings, bg=yellow)
     lbl_settings.image = settings
     lbl_settings.grid(row=0,
-                  column=3)
+                  column=4)
 
     return header_place
 
