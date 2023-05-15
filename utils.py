@@ -185,7 +185,11 @@ def check_word_input(what_to_destroy, where, box_input):
 
     
 
-def results_search_by_word(where, word):
+def results_search_by_word(where, s_word: str):
+    s_word = s_word.lower()
+    word_info = search_by_word(s_word)
+
+    # A general place where it is and which can be destroyed
     body_place = tk.Frame(where, bg = 'white')
     body_place.pack(fill='x')
 
@@ -193,6 +197,28 @@ def results_search_by_word(where, word):
     body1 = tk.Frame(body_place, bg="white")
     body1.pack(pady=5)
 
+
+    btn_word = tk.Button(body1,
+                         command= lambda: [body_place.destroy(), make_search_by_word(where)],
+                         text=s_word,
+                         bg=yellow)
+    btn_word.grid(row = 0,
+              column = 0,
+              padx=20,
+              pady=20)
+
+    _save = Image.open("icons/save.png")
+    img_save= ImageTk.PhotoImage(_save)
+    
+    btn_save = tk.Button(body1,
+                      image=img_save,
+                      border=0,
+                      bg="white")
+    btn_save.image = img_save
+    btn_save.grid(row = 0,
+              column = 1,
+              padx=20,
+              pady=20)
 
     #Here is the definition of the word and
     print(word)

@@ -17,3 +17,7 @@ def is_in_dataset(searched_word: str):
     return True
   else:
     return False
+
+def search_by_word(searched_word: str):
+  result = words[searched_word]
+  return result # It is a list of lists
