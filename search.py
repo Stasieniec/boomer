@@ -11,3 +11,9 @@ print(len(words))
 
 for word, info in words.items():
   print(word, info)
+
+def is_in_dataset(searched_word: str):
+  if searched_word in words:
+    return True
+  else:
+    return False

@@ -28,7 +28,7 @@ body.pack(fill='x')
 
 footer = tk.Frame(root,
                   bg="#F9E21B",
-                  pady=20,
+                  pady=20,  
                   borderwidth=2,
                   relief="raised")
 

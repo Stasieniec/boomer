@@ -20,7 +20,6 @@ def make_header(root):
     And then, to place it and make it spread to the whole width:
     header.pack(fill='x')
 
-
     '''
     header_place = tk.Frame(root,
                   bg=yellow)
@@ -61,8 +60,8 @@ def make_main_body(where):
                   bg="white")
     
     #WORD OF THE DAY
+    #It is an image for now.
     _wotd = Image.open("icons/word_of_the_day.png")
-    #_wotd = _wotd.resize((137,137), Image.ANTIALIAS)
     img_wotd= ImageTk.PhotoImage(_wotd)
     wotd = tk.Label(body_place, image=img_wotd)
     wotd.image = img_wotd
@@ -132,9 +131,8 @@ def make_main_body(where):
               padx=20,
               pady=20)
     
-
+    #grandpa picture as it is in figma
     _grandpa = Image.open("icons/grandpa.png")
-    #_wotd = _wotd.resize((137,137), Image.ANTIALIAS)
     img_grandpa= ImageTk.PhotoImage(_grandpa)
     grandpa = tk.Label(body_place, image=img_grandpa)
     grandpa.image = img_grandpa
@@ -146,24 +144,58 @@ def make_main_body(where):
 
 
 def make_search_by_word(where):
+
+    s_word = tk.StringVar()
     body_place = tk.Frame(where, bg = 'white')
     body_place.pack(fill='x')
     body = tk.Frame(body_place, bg="white")
     body.pack(pady=5)
 
-    entry = tk.Entry(body)
+    entry = tk.Entry(body,
+                     bg=yellow,
+                     fg='black',
+                     textvariable=s_word)
     entry.pack()
 
     _search = Image.open("icons/search.png")
     img_search= ImageTk.PhotoImage(_search)
     search = tk.Button(body,
-                      image=img_search,
-                      border=0,
-                      bg="white")
+                       command= lambda: [body_place.destroy(), results_search_by_word(where, s_word.get())],
+                       #TODO Display an error message if there is no such word in the dataset.
+                       image=img_search,
+                       border=0,
+                       bg="white",
+                       padx=20,
+                       pady=20)
     search.image = img_search
     search.pack()
 
+def check_word_input(what_to_destroy, where, box_input):
+    box_input = str.lower(box_input)
+    if is_in_dataset(box_input):
+        what_to_destroy.destroy()
+        results_search_by_word(where=where, word=box_input)
+    else:
+
+        lbl_error = tk.Label(where,
+                         text="Sorry, looks like this word is not in our dictionary.")
+        lbl_error.pack()
+
+
+
     
+
+def results_search_by_word(where, word):
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+
+    #Here is the WORD and SAVE button
+    body1 = tk.Frame(body_place, bg="white")
+    body1.pack(pady=5)
+
+
+    #Here is the definition of the word and
+    print(word)
 
 
 def make_search_by_parameters(where):
