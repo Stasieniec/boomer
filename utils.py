@@ -108,6 +108,7 @@ def make_main_body(where):
     _btn3 = _btn3.resize((137,137), Image.ANTIALIAS)
     img_btn3= ImageTk.PhotoImage(_btn3)
     btn3 = tk.Button(body,
+                     command=lambda: [body_place.destroy(), make_saved_words(where=where)], # go to saved words
                       image=img_btn3,
                       border=0,
                       bg="white")
@@ -205,6 +206,7 @@ def results_search_by_word(where, s_word: str):
     img_save= ImageTk.PhotoImage(_save)
     
     btn_save = tk.Button(body1,
+                         command=lambda: add_saved_word(s_word),
                       image=img_save,
                       border=0,
                       bg="white")
@@ -421,3 +423,18 @@ def results_search_by_age(where, start_age, end_age):
     lbl_people = tk.Label(body1,
                          text= ', '.join(x for x in displayed_personalities))
     lbl_people.pack()
+
+
+
+def make_saved_words(where):
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+    body1 = tk.Frame(body_place, bg="white")
+    body1.pack(pady=5)
+
+    word_list = get_saved_words()
+
+    for x in word_list:
+        tk.Button(body1,
+                  text=x,
+                  command= lambda: [body_place.destroy(), results_search_by_word(where, x)]).pack(pady=5)
