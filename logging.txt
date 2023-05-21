@@ -16,3 +16,20 @@
 00:46 clicked on search by age
 00:55 search results were generated for search by age
 01:12 user returned home
+00:00 New session started @2023-05-21 13:40:34.259498
+00:01 clicked on search by word
+00:00 New session started @2023-05-21 13:41:45.844606
+00:01 clicked on search by word
+00:10 search results were generated for searching by word
+00:00 New session started @2023-05-21 13:47:57.583535
+00:23 clicked on search by word
+00:29 search results were generated for searching by word
+00:00 New session started @2023-05-21 13:50:56.173321
+00:08 clicked on search by word
+00:13 search results were generated for searching by word
+00:00 New session started @2023-05-21 13:53:37.628896
+00:01 clicked on search by word
+00:05 search results were generated for searching by word
+00:00 New session started @2023-05-21 13:57:37.209509
+00:01 clicked on search by word
+00:07 search results were generated for searching by word

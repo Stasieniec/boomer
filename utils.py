@@ -211,8 +211,9 @@ def make_search_by_word(where):
 
     _search = Image.open("icons/search.png")
     img_search= ImageTk.PhotoImage(_search)
+    #it was command= lambda: [body_place.destroy(), results_search_by_word(where, s_word.get())] if is_in_dataset(s_word.get().lower()) == True else input_error(body)
     search = tk.Button(body,
-                       command= lambda: [body_place.destroy(), results_search_by_word(where, s_word.get())] if is_in_dataset(s_word.get().lower()) == True else input_error(body),
+                       command= lambda: [body_place.destroy(), results_search_by_word(where, s_word.get())],
                        #TODO Display an error message if there is no such word in the dataset.
                        image=img_search,
                        border=0,
@@ -281,24 +282,34 @@ def results_search_by_word(where, s_word: str):
                         pady=10)
 
     lbl_related_words = tk.Label(body2,
-                              text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
+                              #text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
+                              text=str('Related words: \n' + word_info[1]),
                               fg='black',
                               bg=yellow)
     lbl_related_words.pack(fill='x',
                            pady=10)
 
     lbl_subculture = tk.Label(body2,
-                              text=str('Related subculture: \n'+', '.join(x for x in word_info[2])),
+                              text=str('Related subculture: \n'+word_info[2]),
                               fg='black',
                               bg=yellow)
     lbl_subculture.pack(fill='x',
                            pady=10)
     
     lbl_ages = tk.Label(body2,
-                              text='Age of people who use that word: \n'+str(', '.join(str(x) for x in word_info[3])),
+                              text='Age of people who use that word: \n'+ word_info[3],
                               fg='black',
                               bg=yellow)
+    
     lbl_ages.pack(fill='x',
+                  pady=10)
+    
+    lbl_category = tk.Label(body2,
+                              text='Category: \n'+ word_info[4],
+                              fg='black',
+                              bg=yellow)
+    
+    lbl_category.pack(fill='x',
                   pady=10)
 
 

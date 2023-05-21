@@ -173,5 +173,48 @@
         ["social media", "internet culture", "youth movements"],
         [16, 17, 18],
         "topic"
-        ]
+        ],
+    "boomer": [
+        "a term used to refer to an older person, typically associated with outdated attitudes or beliefs",
+        ["old-fashioned", "outdated", "uncool"],
+        ["youth culture", "internet slang", "generational divide"],
+        [15, 16, 17, 18, 19],
+        "word"
+        ],
+    "bussin": [
+        "an adjective used to describe something delicious or exceptionally good",
+        ["amazing", "delicious", "yummy"],
+        ["food culture", "youth slang"],
+        [13, 14, 15, 16],
+        "word"
+        ],
+    "PewDiePie": [
+        "a popular YouTuber known for his comedic commentary and Let's Play videos",
+        ["YouTuber", "content creator", "internet personality"],
+        ["YouTube culture", "gaming community", "internet entertainment"],
+        [13, 14, 15, 16, 17, 18],
+        "person"
+        ],
+    "Call of Duty": [
+        "a popular first-person shooter video game franchise",
+        ["FPS", "video game", "shooter"],
+        ["gaming culture", "online multiplayer", "eSports"],
+        [13, 14, 15, 16, 17, 18],
+        "topic"
+    ],
+    "floss": [
+        "a popular dance move involving rapid swinging of the hips in one direction while swinging the arms in the opposite direction",
+        ["dance move", "hip movement", "popular"],
+        ["youth culture", "dance community", "music videos"],
+        [10, 11, 12, 13, 14, 15],
+        "activity"
+    ]
+
+
+    
+
+
+
+
+
 }
