@@ -1,8 +1,9 @@
 import json
 import openai
 import os
+import config
 
-openai.api_key = "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"
+openai.api_key = config.key
 
 
 with open("data.json", "r") as f:
@@ -90,7 +91,7 @@ def search_by_word(searched_word: str):
 
 def search_by_age(start_age, end_age):
   list_of_results = []
-  '''
+  
   for word in words:
     ages = words[word][3]
     is_in = False
@@ -104,6 +105,6 @@ def search_by_age(start_age, end_age):
       list_of_results.append(single_result)
 
   return list_of_results
-  '''
+  
 
 
