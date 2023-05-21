@@ -1,0 +1,18 @@
+00:00 New session started @2023-05-21 12:49:05.631314
+00:03 clicked on search by word
+00:13 search results were generated for searching by word
+00:00 New session started @2023-05-21 12:50:28.987008
+00:14 clicked on search by word
+00:20 search results were generated for searching by word
+00:00 New session started @2023-05-21 12:56:39.997185
+00:09 clicked on search by word
+00:15 search results were generated for searching by word
+00:35 user returned home
+00:38 clicked on saved words
+00:39 search results were generated for searching by word
+00:43 user returned home
+00:44 clicked on dictionary
+00:45 clicked on dictionary
+00:46 clicked on search by age
+00:55 search results were generated for search by age
+01:12 user returned home
