@@ -48,3 +48,6 @@
 00:00 New session started @2023-05-21 14:12:20.358199
 00:03 clicked on search by word
 00:18 search results were generated for searching by word
+00:00 New session started @2023-05-21 14:17:36.172555
+00:01 clicked on search by word
+00:12 search results were generated for searching by word
