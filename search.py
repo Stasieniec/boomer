@@ -2,7 +2,7 @@ import json
 import openai
 import os
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 with open("data.json", "r") as f:
@@ -105,5 +105,5 @@ def search_by_age(start_age, end_age):
 
   return list_of_results
   '''
-  
+
 

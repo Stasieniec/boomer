@@ -33,3 +33,12 @@
 00:00 New session started @2023-05-21 13:57:37.209509
 00:01 clicked on search by word
 00:07 search results were generated for searching by word
+00:00 New session started @2023-05-21 14:03:52.190023
+00:02 clicked on search by word
+00:23 search results were generated for searching by word
+01:06 user returned home
+01:07 clicked on search by word
+00:00 New session started @2023-05-21 14:05:35.480109
+00:01 clicked on search by word
+00:17 search results were generated for searching by word
+00:29 user returned home
