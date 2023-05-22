@@ -237,7 +237,7 @@
         [10, 11, 12, 13, 14, 15, 16],
         "person"
     ],
-    "One Direction": [
+    "one direction": [
         "a British-Irish boy band formed on the reality TV show The X Factor in 2010, known for their pop music and massive fan following",
         ["boy band", "pop music", "X Factor"],
         ["music industry", "pop culture", "One Direction fandom"],
@@ -251,14 +251,14 @@
         [13, 14, 15, 16, 17, 18, 19],
         "activity"
     ],
-    "Beyoncé": [
+    "beyonce": [
         "an American singer, songwriter, actress, and businesswoman known for her powerful vocals, captivating performances, and influential contributions to music and popular culture",
         ["singer", "songwriter", "actress", "businesswoman"],
         ["music industry", "pop culture", "Beyhive"],
         [13, 14, 15, 16, 17, 18],
         "person"
     ],
-    "Eurovision": [
+    "eurovision": [
         "an international song contest held annually, featuring participants from various countries who compete with original songs and performances",
         ["song contest", "international", "music"],
         ["music industry", "pop culture", "European countries"],
@@ -272,28 +272,28 @@
         [15, 16, 17, 18, 19, 20],
         "topic"
     ],
-    "Eminem": [
+    "eminem": [
         "an American rapper, songwriter, record producer, and actor known for his lyrical prowess, controversial subject matter, and distinctive rap style",
         ["rapper", "songwriter", "record producer", "actor"],
         ["music industry", "hip-hop culture", "rap community"],
         [14, 15, 16, 17, 18, 19, 21, 22],
         "person"
     ],
-    "K-pop": [
+    "k-pop": [
         "a genre of popular music originating from South Korea, characterized by its catchy melodies, synchronized dance routines, and visually appealing performances",
         ["music genre", "South Korea", "catchy"],
         ["music industry", "pop culture", "K-pop fandom"],
         [8, 9, 10, 11, 12, 13, 14, 15, 16],
         "topic"
     ],
-    "Taylor Swift": [
+    "taylor swift": [
         "an American singer-songwriter known for her narrative songwriting, versatile musical style, and massive commercial success",
         ["singer", "songwriter", "pop"],
         ["music industry", "pop culture", "Swifties"],
         [13, 14, 15, 16, 17, 18],
         "person"
     ],
-    "Swifties": [
+    "swifties": [
         "a dedicated and passionate fanbase of Taylor Swift, known for their love and support of her music, performances, and personal life",
         ["Taylor Swift fans", "dedicated", "passionate"],
         ["music fandom", "pop culture", "Taylor Swift community"],
@@ -307,14 +307,14 @@
         [16, 17, 18, 19, 20, 21],
         "activity"
     ],
-    "JBL": [
+    "jbl": [
         "a renowned audio equipment company known for manufacturing high-quality speakers, headphones, and other sound systems",
         ["audio equipment", "speakers", "headphones"],
         ["consumer electronics", "music industry", "audio enthusiasts"],
         [13, 14, 15, 16, 17, 18],
         "topic"
     ],
-    "AirPods": [
+    "airpods": [
         "a popular brand of wireless earbuds produced by Apple, known for their sleek design, convenience, and seamless integration with Apple devices",
         ["wireless earbuds", "Apple", "convenience"],
         ["consumer electronics", "tech culture", "Apple ecosystem"],
