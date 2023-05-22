@@ -34,7 +34,7 @@ def search_by_word(searched_word: str):
   result = []
   ai_definition = openai.Completion.create(
   model="text-davinci-003",
-  prompt=f"Give a short definition of the word. If the definition os longer than 7 words, add new line symbols so that it would fit on a smartphone screen \"{searched_word}\"",
+  prompt=f"Give a short definition of the word. If the definition is longer than 7 words, add new line symbols so that it would fit on a smartphone screen \"{searched_word}\"",
   temperature=1,
   max_tokens=256,
   top_p=1,
@@ -52,7 +52,7 @@ def search_by_word(searched_word: str):
   )
   ai_subcultures = openai.Completion.create(
   model="text-davinci-003",
-  prompt=f"Give a short list of subcultures of people, who might use the following word: \"{searched_word}\"",
+  prompt=f"Give a short list of youth subcultures of people, who might use the following word: \"{searched_word}\"",
   temperature=1,
   max_tokens=256,
   top_p=1,
