@@ -1,6 +1,5 @@
 import json
 import openai
-import os
 import config
 
 openai.api_key = config.key
