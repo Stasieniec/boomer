@@ -283,21 +283,21 @@ def results_search_by_word(where, s_word: str):
 
     lbl_related_words = tk.Label(body2,
                               #text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
-                              text=str('Related words: \n' + word_info[1]),
+                              text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
                               fg='black',
                               bg=yellow)
     lbl_related_words.pack(fill='x',
                            pady=10)
 
     lbl_subculture = tk.Label(body2,
-                              text=str('Related subculture: \n'+word_info[2]),
+                              text=str('Related subculture: \n'+ ', '.join(word_info[2])),
                               fg='black',
                               bg=yellow)
     lbl_subculture.pack(fill='x',
                            pady=10)
     
     lbl_ages = tk.Label(body2,
-                              text='Age of people who use that word: \n'+ word_info[3],
+                              text='Age of people who use that word: \n'+ ', '.join(x for x in word_info[3]),
                               fg='black',
                               bg=yellow)
     
