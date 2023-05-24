@@ -2,4 +2,3 @@ tkinter
 Pillow
 json
 datetime
-openai

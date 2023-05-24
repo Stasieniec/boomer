@@ -297,7 +297,7 @@ def results_search_by_word(where, s_word: str):
                            pady=10)
     
     lbl_ages = tk.Label(body2,
-                              text='Age of people who use that word: \n'+ ', '.join(x for x in word_info[3]),
+                              text='Age of people who use that word: \n'+ ', '.join(str(x) for x in word_info[3]),
                               fg='black',
                               bg=yellow)
     

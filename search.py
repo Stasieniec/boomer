@@ -1,9 +1,4 @@
 import json
-import openai
-import config
-
-openai.api_key = config.key
-
 
 with open("data.json", "r") as f:
   words = json.load(f)
