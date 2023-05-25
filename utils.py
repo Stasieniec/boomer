@@ -501,7 +501,7 @@ def make_saved_words(where):
 
     for x in word_list:
         tk.Button(body1,
-                  text=x,
+                  text=x, font = Font_small_body, bg=yellow,
                   command= lambda: [body_place.destroy(), results_search_by_word(where, x)]).pack(pady=5)
         
 
@@ -515,5 +515,5 @@ def make_dictionairy(where):
 
     for x in word_list:
         tk.Button(body1,
-                  text=x,
+                  text=x, font = Font_small_body, bg=yellow,
                   command= lambda: [body_place.destroy(), results_search_by_word(where, x)]).pack(pady=5)
