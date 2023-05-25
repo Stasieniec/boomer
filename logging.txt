@@ -1,9 +1,0 @@
-00:00 New session started @2023-05-25 12:25:53.912622
-00:01 clicked on dictionary
-00:04 user returned home
-00:06 clicked on saved words
-00:07 user returned home
-00:07 clicked on dictionary
-00:00 New session started @2023-05-25 12:27:15.732293
-00:01 clicked on dictionary
-00:05 search results were generated for searching by word
