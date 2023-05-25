@@ -5,9 +5,10 @@ import re
 
 openai.api_key = config.key
 
-
-with open("data.json", "r") as f:
-  words = json.load(f)
+def get_words():
+  with open("data.json", "r") as f:
+    words = json.load(f)
+  return words
 
 def add_saved_word(word): 
   with open("saved_words.txt", "r+") as f:
@@ -24,7 +25,7 @@ def get_saved_words():
 
 
 def is_in_dataset(searched_word: str):
-  if searched_word in words:
+  if searched_word in get_words():
     return True
   else:
     return False
@@ -33,7 +34,7 @@ def search_by_word(searched_word: str):
 
   if is_in_dataset(searched_word):
     #this word is in dataset
-    return words[searched_word]
+    return get_words()[searched_word]
   else:
     #AI generation
     result = []
@@ -111,6 +112,7 @@ def search_by_word(searched_word: str):
   
 
 def search_by_age(start_age, end_age):
+  words = get_words()
   list_of_results = []
   
   for word in words:
