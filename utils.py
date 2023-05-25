@@ -173,7 +173,7 @@ def make_main_body(where):
     _btn4 = _btn4.resize((137,137), Image.ANTIALIAS)
     img_btn4= ImageTk.PhotoImage(_btn4)
     btn4 = tk.Button(body,
-                     command=lambda: [body_place.destroy(), make_saved_words(where=where), logaction('clicked on dictionary')],
+                     command=lambda: [body_place.destroy(), make_dictionairy(where=where), logaction('clicked on dictionary')],
                       image=img_btn4,
                       border=0,
                       bg="white")
