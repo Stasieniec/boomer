@@ -173,7 +173,7 @@ def make_main_body(where):
     _btn4 = _btn4.resize((137,137), Image.ANTIALIAS)
     img_btn4= ImageTk.PhotoImage(_btn4)
     btn4 = tk.Button(body,
-                     command=lambda: logaction('clicked on dictionary'),
+                     command=lambda: [body_place.destroy(), make_saved_words(where=where), logaction('clicked on dictionary')],
                       image=img_btn4,
                       border=0,
                       bg="white")
@@ -207,7 +207,7 @@ def make_search_by_word(where):
                      bg=yellow,
                      fg='black',
                      textvariable=s_word)
-    entry.pack()
+    entry.pack(pady=10)
 
     _search = Image.open("icons/search.png")
     img_search= ImageTk.PhotoImage(_search)
@@ -497,6 +497,20 @@ def make_saved_words(where):
     body1.pack(pady=5)
 
     word_list = get_saved_words()
+
+    for x in word_list:
+        tk.Button(body1,
+                  text=x,
+                  command= lambda: [body_place.destroy(), results_search_by_word(where, x)]).pack(pady=5)
+        
+
+def make_dictionairy(where):
+    body_place = tk.Frame(where, bg = 'white')
+    body_place.pack(fill='x')
+    body1 = tk.Frame(body_place, bg="white")
+    body1.pack(pady=5)
+
+    word_list = get_words().keys()
 
     for x in word_list:
         tk.Button(body1,
