@@ -7,77 +7,77 @@
         "word"
     ],
     "stan": [
-        "a fan or admirer of a celebrity or a subculture",
+        "a fan or admirer of\n a celebrity or a subculture",
         ["fanboy", "fangirl", "superfan"],
         ["pop culture", "social media", "fandoms"],
         [12, 13, 14, 15, 16],
         "word"
     ],
     "tiktok": [
-        "a social media platform for creating and sharing short videos",
+        "a social media platform\n for creating and sharing short videos",
         ["instagram", "snapchat", "youtube"],
         ["influencers", "content creators", "viral trends"],
         [10, 11, 12, 13, 14, 15],
         "topic"
     ],
     "dab": [
-        "a dance move that involves raising one arm and dropping the head into the bent elbow of the other arm",
+        "a dance move that involves \nraising one arm and dropping the head into\n the bent elbow of the other arm",
         ["whip", "nae nae", "floss"],
         ["dance culture", "hip hop", "sports"],
         [9, 10, 11, 12],
         "activity"
     ],
     "bts": [
-        "a popular South Korean boy band that performs pop music with elements of hip hop and R&B",
+        "a popular South Korean boy\n band that performs pop music with\n elements of hip hop and R&B",
         ["exo", "blackpink", "one direction"],
         ["k-pop", "music industry", "army"],
         [13, 14, 15, 16, 17],
         "person"
     ],
     "lit": [
-        "a slang term for something that is exciting, fun, or amazing",
+        "a slang term for something\n that is exciting, fun, or amazing",
         ["awesome", "cool", "fire"],
         ["party culture", "hip hop", "internet slang"],
         [13, 14, 15, 16, 17],
         "word"
     ],
     "meme": [
-        "a humorous image, video, or text that is copied and spread online, often with slight variations",
+        "a humorous image, video, or text that\n is copied and spread online,\n often with slight variations",
         ["gif", "vine", "joke"],
         ["meme culture", "internet humor", "social media"],
         [10, 11, 12, 13, 14, 15, 16],
         "topic"
     ],
     "fortnite": [
-        "a popular online video game that involves shooting and building structures",
+        "a popular online video game that\n involves shooting and building structures",
         ["minecraft", "pubg", "roblox"],
         ["gaming culture", "streamers", "esports"],
         [9, 10, 11, 12, 13],
         "activity"
     ],
     "billie eilish": [
-        "a young American singer and songwriter who is known for her dark and edgy style of music",
+        "a young American singer and songwriter\n who is known for her dark and edgy style of music",
         ["lana del rey", "lorde", "halsey"],
         ["pop music", "alternative music", "gen z"],
         [14, 15, 16, 17],
         "person"
     ],
     "sksksk": [
-        "a slang term for laughter or surprise that is often used by fans of the vsco girl aesthetic",
+        "a slang term for laughter or surprise\n that is often used by fans of the vsco girl aesthetic",
         ["lol", "omg", "lmao"],
         ["vsco girl", "internet slang", "tiktok"],
         [11, 12, 13],
         "word"
     ],
     "tea": [
-        "a slang term for gossip, drama, or juicy information",
+        "a slang term for gossip,\n drama, or juicy information",
         ["shade", "spill", "dirt"],
         ["pop culture", "internet slang", "social media"],
         [14, 15, 16, 17],
         "word"
     ],
     "anime": [
-        "a style of animation that originated in Japan and features colorful graphics and often complex plots and characters",
+        "a style of animation that originated in Japan\n and features colorful graphics and\n often complex plots and characters",
         ["manga", "cartoon", "cosplay"],
         ["anime culture", "otaku", "weeb"],
         [12, 13, 14, 15, 16],
@@ -91,245 +91,245 @@
         "activity"
     ],
     "emma chamberlain": [
-        "a famous American youtuber and influencer who is known for her relatable and quirky videos",
+        "a famous American youtuber and influencer\n who is known for her relatable and quirky videos",
         ["james charles", "david dobrik", "jenna marbles"],
         ["youtube", "vlogging", "gen z"],
         [13, 14, 15, 16],
         "person"
     ],
     "bruh": [
-        "a slang term for expressing disbelief, annoyance, or amusement",
+        "a slang term for expressing disbelief,\n annoyance, or amusement",
         ["dude", "bro", "smh"],
         ["internet slang", "meme culture", "hip hop"],
         [11, 12, 13, 14],
         "word"
     ],
     "flex": [
-        "a slang term for showing off or boasting about something",
+        "a slang term for showing off or\n boasting about something",
         ["brag", "flaunt", "showboat"],
         ["internet slang", "hip hop", "social media"],
         [13, 14, 15, 16],
         "word"
     ],
     "star wars": [
-        "a popular sci-fi franchise that features movies, books, games, and merchandise set in a galaxy far, far away",
+        "a popular sci-fi franchise that features movies,\n books, games, and merchandise set in\n a galaxy far, far away",
         ["star trek", "lord of the rings", "marvel"],
         ["sci-fi", "fandoms", "nerd culture"],
         [10, 11, 12, 13, 14, 15],
         "topic"
     ],
     "basketball": [
-        "a sport that involves shooting a ball into a hoop",
+        "a sport that involves\n shooting a ball into a hoop",
         ["soccer", "football", "baseball"],
         ["sports", "nba", "athletes"],
         [9, 10, 11, 12, 13],
         "activity"
     ],
     "ariana grande": [
-        "a famous American singer and actress who is known for her powerful vocals and catchy songs",
+        "a famous American singer and actress who is known\n for her powerful vocals and catchy songs",
         ["selena gomez", "taylor swift", "demi lovato"],
         ["pop music", "celebrities", "arianators"],
         [14, 15, 16, 17],
         "person"
     ],
     "no cap": [
-        "a slang term for expressing honesty or sincerity",
+        "a slang term for expressing\n honesty or sincerity",
         ["for real", "no lie", "facts"],
         ["internet slang", "hip hop", "gen z"],
         [13, 14, 15],
         "word"
     ],
     "savage": [
-        "a slang term for someone who is tough, cool, or fearless",
+        "a slang term for someone who\n is tough, cool, or fearless",
         ["badass", "beast", "boss"],
         ["internet slang", "hip hop", "youth culture"],
         [12, 13, 14, 15],
         "word"
         ],
     "fomo": [
-        "an acronym for 'fear of missing out,' describing the anxiety or unease caused by the possibility of missing out on something exciting or interesting",
+        "an acronym for 'fear of missing out,'\n describing the anxiety or unease caused by the possibility\n of missing out on something exciting or interesting",
         ["jomo", "yolo", "fobe"],
         ["social media", "youth culture", "internet slang"],
         [15, 16, 17, 18],
         "word"
         ],
     "vibes": [
-        "a slang term referring to the atmosphere, energy, or overall feeling of a person, place, or thing",
+        "a slang term referring to the atmosphere,\n energy, or overall feeling of a person,\n place, or thing",
         ["mood", "energy", "aura"],
         ["youth culture", "music", "social media"],
         [13, 14, 15, 16],
         "word"
         ],
     "clout": [
-        "a slang term for influence, popularity, or social status",
+        "a slang term for influence,\n popularity, or social status",
         ["swag", "influence", "status"],
         ["social media", "internet culture", "youth slang"],
         [14, 15, 16, 17],
         "word"
         ],
     "cancel culture": [
-        "a term describing the practice of boycotting or publicly shaming individuals or companies for perceived offensive or controversial behavior",
+        "a term describing the practice of boycotting or\n publicly shaming individuals or companies for perceived\n offensive or controversial behavior",
         ["call-out culture", "online backlash", "internet activism"],
         ["social media", "internet culture", "youth movements"],
         [16, 17, 18],
         "topic"
         ],
     "boomer": [
-        "a term used to refer to an older person, typically associated with outdated attitudes or beliefs",
+        "a term used to refer to an older person,\n typically associated with outdated attitudes or beliefs",
         ["old-fashioned", "outdated", "uncool"],
         ["youth culture", "internet slang", "generational divide"],
         [15, 16, 17, 18, 19],
         "word"
         ],
     "bussin": [
-        "an adjective used to describe something delicious or exceptionally good",
+        "an adjective used to describe\n something delicious or exceptionally good",
         ["amazing", "delicious", "yummy"],
         ["food culture", "youth slang"],
         [13, 14, 15, 16],
         "word"
         ],
     "PewDiePie": [
-        "a popular YouTuber known for his comedic commentary and Let's Play videos",
+        "a popular YouTuber known for his\n comedic commentary and Let's Play videos",
         ["YouTuber", "content creator", "internet personality"],
         ["YouTube culture", "gaming community", "internet entertainment"],
         [13, 14, 15, 16, 17, 18],
         "person"
         ],
     "Call of Duty": [
-        "a popular first-person shooter video game franchise",
+        "a popular first-person shooter\n video game franchise",
         ["FPS", "video game", "shooter"],
         ["gaming culture", "online multiplayer", "eSports"],
         [13, 14, 15, 16, 17, 18],
         "topic"
     ],
     "floss": [
-        "a popular dance move involving rapid swinging of the hips in one direction while swinging the arms in the opposite direction",
+        "a popular dance move involving rapid swinging of the hips\n in one direction while swinging the \narms in the opposite direction",
         ["dance move", "hip movement", "popular"],
         ["youth culture", "dance community", "music videos"],
         [10, 11, 12, 13, 14, 15],
         "activity"
     ],
     "hip-hop": [
-        "a genre of music characterized by rhythmic beats, rap vocals, and elements of urban culture",
+        "a genre of music characterized\n by rhythmic beats, rap vocals,\n and elements of urban culture",
         ["rap", "music genre", "urban"],
         ["youth culture", "music industry", "hip-hop community"],
         [13, 14, 15, 16, 17, 18, 19],
         "topic"
     ],
     "Ed Sheeran": [
-        "a British singer-songwriter known for his heartfelt acoustic pop songs",
+        "a British singer-songwriter known for\n his heartfelt acoustic pop songs",
         ["singer", "songwriter", "acoustic pop"],
         ["music industry", "pop culture", "singer-songwriter community"],
         [15, 16, 17, 18, 19, 20],
         "person"
     ],
     "rap": [
-        "a musical style characterized by rhythmically spoken or chanted lyrics, often with an emphasis on wordplay and storytelling",
+        "a musical style characterized by\n rhythmically spoken or chanted lyrics,\n often with an emphasis on wordplay and storytelling",
         ["hip-hop", "music genre", "lyrics"],
         ["youth culture", "music industry", "hip-hop community"],
         [13, 14, 15, 16, 17, 18],
         "topic"
     ],
     "Harry Styles": [
-        "an English singer, songwriter, and actor known for his work as a member of the band One Direction and his successful solo career",
+        "an English singer, songwriter, and actor known\n for his work as a member of the band One Direction\n and his successful solo career",
         ["singer", "songwriter", "actor"],
         ["music industry", "pop culture", "One Direction fandom"],
         [10, 11, 12, 13, 14, 15, 16],
         "person"
     ],
     "one direction": [
-        "a British-Irish boy band formed on the reality TV show The X Factor in 2010, known for their pop music and massive fan following",
+        "a British-Irish boy band formed on the\n reality TV show The X Factor in 2010,\n known for their pop music and massive fan following",
         ["boy band", "pop music", "X Factor"],
         ["music industry", "pop culture", "One Direction fandom"],
         [13, 14, 15, 16, 17, 18],
         "topic"
     ],
     "headbanging": [
-        "a vigorous and rhythmic movement of the head, typically done in time with heavy metal or rock music",
+        "a vigorous and rhythmic movement\n of the head, typically done\n in time with heavy metal or rock music",
         ["music movement", "rock culture", "energetic"],
         ["music concerts", "rock subculture", "metal community"],
         [13, 14, 15, 16, 17, 18, 19],
         "activity"
     ],
     "beyonce": [
-        "an American singer, songwriter, actress, and businesswoman known for her powerful vocals, captivating performances, and influential contributions to music and popular culture",
+        "an American singer, songwriter, actress,\n and businesswoman known for her powerful vocals,\n captivating performances, and influential \ncontributions to music and popular culture",
         ["singer", "songwriter", "actress", "businesswoman"],
         ["music industry", "pop culture", "Beyhive"],
         [13, 14, 15, 16, 17, 18],
         "person"
     ],
     "eurovision": [
-        "an international song contest held annually, featuring participants from various countries who compete with original songs and performances",
+        "an international song contest held annually,\n featuring participants from various countries\n who compete with original songs and performances",
         ["song contest", "international", "music"],
         ["music industry", "pop culture", "European countries"],
         [13, 14, 15, 16, 17, 18],
         "event"
     ],
     "pop culture": [
-        "the collection of ideas, perspectives, trends, and phenomena that are popular and influential within mainstream society",
+        "the collection of ideas, perspectives, \ntrends, and phenomena that are popular and\n influential within mainstream society",
         ["trends", "influence", "mainstream"],
         ["youth culture", "media", "entertainment industry"],
         [15, 16, 17, 18, 19, 20],
         "topic"
     ],
     "eminem": [
-        "an American rapper, songwriter, record producer, and actor known for his lyrical prowess, controversial subject matter, and distinctive rap style",
+        "an American rapper, songwriter, record producer,\n and actor known for his lyrical prowess, controversial\n subject matter, and distinctive rap style",
         ["rapper", "songwriter", "record producer", "actor"],
         ["music industry", "hip-hop culture", "rap community"],
         [14, 15, 16, 17, 18, 19, 21, 22],
         "person"
     ],
     "k-pop": [
-        "a genre of popular music originating from South Korea, characterized by its catchy melodies, synchronized dance routines, and visually appealing performances",
+        "a genre of popular music originating from South Korea,\n characterized by its catchy melodies, synchronized dance routines,\n and visually appealing performances",
         ["music genre", "South Korea", "catchy"],
         ["music industry", "pop culture", "K-pop fandom"],
         [8, 9, 10, 11, 12, 13, 14, 15, 16],
         "topic"
     ],
     "taylor swift": [
-        "an American singer-songwriter known for her narrative songwriting, versatile musical style, and massive commercial success",
+        "an American singer-songwriter known for her\n narrative songwriting, versatile musical style,\n and massive commercial success",
         ["singer", "songwriter", "pop"],
         ["music industry", "pop culture", "Swifties"],
         [13, 14, 15, 16, 17, 18],
         "person"
     ],
     "swifties": [
-        "a dedicated and passionate fanbase of Taylor Swift, known for their love and support of her music, performances, and personal life",
+        "a dedicated and passionate fanbase of Taylor Swift,\n known for their love and support of her music, \nperformances, and personal life",
         ["Taylor Swift fans", "dedicated", "passionate"],
         ["music fandom", "pop culture", "Taylor Swift community"],
         [13, 14, 15, 16, 17, 18],
         "community"
     ],
     "moonwalk": [
-        "a dance move popularized by Michael Jackson, characterized by a backward gliding motion where the dancer appears to be walking forward while moving backward",
+        "a dance move popularized by Michael Jackson, \ncharacterized by a backward gliding motion where the dancer \nappears to be walking forward while moving backward",
         ["dance move", "Michael Jackson", "gliding"],
         ["pop culture", "music history", "dance community"],
         [16, 17, 18, 19, 20, 21],
         "activity"
     ],
     "jbl": [
-        "a renowned audio equipment company known for manufacturing high-quality speakers, headphones, and other sound systems",
+        "a renowned audio equipment company \nknown for manufacturing high-quality speakers,\n headphones, and other sound systems",
         ["audio equipment", "speakers", "headphones"],
         ["consumer electronics", "music industry", "audio enthusiasts"],
         [13, 14, 15, 16, 17, 18],
         "topic"
     ],
     "airpods": [
-        "a popular brand of wireless earbuds produced by Apple, known for their sleek design, convenience, and seamless integration with Apple devices",
+        "a popular brand of wireless earbuds produced\n by Apple, known for their sleek design, convenience, \nand seamless integration with Apple devices",
         ["wireless earbuds", "Apple", "convenience"],
         ["consumer electronics", "tech culture", "Apple ecosystem"],
         [9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
         "word"
     ],
     "pop": [
-        "a genre of popular music characterized by its catchy melodies, rhythmic beats, and widespread appeal",
+        "a genre of popular music characterized\n by its catchy melodies, rhythmic beats, \nand widespread appeal",
         ["music genre", "catchy", "mainstream"],
         ["music industry", "pop culture", "youth culture"],
         [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
         "genre"
     ],
     "pop music": [
-        "a genre of popular music characterized by its catchy melodies, rhythmic beats, and widespread appeal to a broad audience",
+        "a genre of popular music characterized by \nits catchy melodies, rhythmic beats, \nand widespread appeal to a broad audience",
         ["music genre", "catchy", "mainstream"],
         ["music industry", "pop culture", "youth culture"],
         [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],

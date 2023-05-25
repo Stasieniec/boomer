@@ -11,6 +11,7 @@ from search import *
 #Global stuff
 Font_header = ("Alata", 32)
 Font_body = ("Alata", 20)
+Font_small_body = ("Alata", 11)
 yellow = '#F9E21B'
 
 def logaction(logtext):
@@ -248,7 +249,7 @@ def results_search_by_word(where, s_word: str):
 
     btn_word = tk.Button(body1,
                          command= lambda: [body_place.destroy(), make_search_by_word(where)],
-                         text=s_word,
+                         text=s_word, font=Font_body,
                          bg=yellow)
     btn_word.grid(row = 0,
               column = 0,
@@ -275,7 +276,7 @@ def results_search_by_word(where, s_word: str):
     body2.pack(pady=5)
 
     lbl_definition = tk.Label(body2,
-                              text='Definition: \n' + str(word_info[0]),
+                              text='Definition: \n' + str(word_info[0]), font=Font_small_body,
                               fg='black',
                               bg=yellow)
     lbl_definition.pack(fill='none',
@@ -283,21 +284,21 @@ def results_search_by_word(where, s_word: str):
 
     lbl_related_words = tk.Label(body2,
                               #text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
-                              text=str('Related words: \n' + ', '.join(x for x in word_info[1])),
+                              text=str('Related words: \n' + ', '.join(x for x in word_info[1])), font=Font_small_body,
                               fg='black',
                               bg=yellow)
     lbl_related_words.pack(fill='x',
                            pady=10)
 
     lbl_subculture = tk.Label(body2,
-                              text=str('Related subculture: \n'+ ', '.join(x for x in word_info[2])),
+                              text=str('Related subculture: \n'+ ', '.join(x for x in word_info[2])), font=Font_small_body,
                               fg='black',
                               bg=yellow)
     lbl_subculture.pack(fill='x',
                            pady=10)
     
     lbl_ages = tk.Label(body2,
-                              text='Age of people who use that word: \n'+ ', '.join(str(x) for x in word_info[3]),
+                              text='Age of people who use that word: \n'+ ', '.join(str(x) for x in word_info[3]), font=Font_small_body,
                               fg='black',
                               bg=yellow)
     
@@ -305,7 +306,7 @@ def results_search_by_word(where, s_word: str):
                   pady=10)
     
     lbl_category = tk.Label(body2,
-                              text='Category: \n'+ word_info[4],
+                              text='Category: \n'+ word_info[4], font=Font_small_body,
                               fg='black',
                               bg=yellow)
     
