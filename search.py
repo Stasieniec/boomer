@@ -1,6 +1,7 @@
 import json
 import openai
 import config
+import re
 
 openai.api_key = config.key
 
@@ -47,7 +48,7 @@ def search_by_word(searched_word: str):
     )
     ai_similar_words = openai.Completion.create(
     model="text-davinci-003",
-    prompt=f"Give 5 examples of words similar to, separated by commas \"{searched_word}\"",
+    prompt=f"Give 5 examples of words similar to \"{searched_word}\", separated by spaces.",
     temperature=1,
     max_tokens=256,
     top_p=1,
@@ -56,7 +57,7 @@ def search_by_word(searched_word: str):
     )
     ai_subcultures = openai.Completion.create(
     model="text-davinci-003",
-    prompt=f"Give a short list of youth subcultures of people, who might use the following word: \"{searched_word}\"",
+    prompt=f"Give a short list of youth subcultures of people, who might use the following word, separated by spaces. If a subculture has a space in it's name, make it a dash: \"{searched_word}\"",
     temperature=1,
     max_tokens=256,
     top_p=1,
@@ -65,7 +66,7 @@ def search_by_word(searched_word: str):
     )
     ai_ages = openai.Completion.create(
     model="text-davinci-003",
-    prompt=f"Give a list of ages of young people who might use that word, separated by commas: \"{searched_word}\"",
+    prompt=f"Give a list of numbers indicating ages of young people who might use the following word, separated by spaces: \"{searched_word}\"",
     temperature=1,
     max_tokens=256,
     top_p=1,
@@ -81,13 +82,33 @@ def search_by_word(searched_word: str):
     frequency_penalty=0,
     presence_penalty=0
     )
-    result.append(ai_definition['choices'][0]['text'])
-    result.append(ai_similar_words['choices'][0]['text'])
-    result.append(ai_subcultures['choices'][0]['text'])
-    result.append(ai_ages['choices'][0]['text'])
-    result.append(ai_category['choices'][0]['text'])
+    definition = ai_definition['choices'][0]['text']
+    similar_words = ai_similar_words['choices'][0]['text'].split()
+    subcultures = ai_subcultures['choices'][0]['text'].split()
+    ages_clean = re.sub("[a-zA-Z,]", "", ai_ages['choices'][0]['text'])
+    ages = list(map(int, ages_clean.split()))
+    category = ai_category['choices'][0]['text']
+    new_word = {searched_word:[
+                definition,
+                similar_words,
+                subcultures,
+                ages,
+                category]
+                }
 
-    return result # It is a list of lists
+    with open("data.json", "r") as f:
+      # Load the existing data into a dictionary using json.load function
+      existing_data = json.load(f)
+      # Close the file
+      f.close()
+      existing_data.update(new_word)
+
+    with open("data.json", "w") as f:
+      json.dump(existing_data, f)
+      f.close()
+
+    return new_word[searched_word]
+  
 
 def search_by_age(start_age, end_age):
   list_of_results = []
@@ -105,6 +126,3 @@ def search_by_age(start_age, end_age):
       list_of_results.append(single_result)
 
   return list_of_results
-  
-
-
