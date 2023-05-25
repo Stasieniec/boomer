@@ -29,64 +29,65 @@ def is_in_dataset(searched_word: str):
     return False
 
 def search_by_word(searched_word: str):
-  #alpha sigma searching with AI
-  
-  result = []
-  ai_definition = openai.Completion.create(
-  model="text-davinci-003",
-  prompt=f"Give a short definition of the word. If the definition is longer than 7 words, add new line symbols so that it would fit on a smartphone screen \"{searched_word}\"",
-  temperature=1,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-  )
-  ai_similar_words = openai.Completion.create(
-  model="text-davinci-003",
-  prompt=f"Give 5 examples of words similar to, separated by commas \"{searched_word}\"",
-  temperature=1,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-  )
-  ai_subcultures = openai.Completion.create(
-  model="text-davinci-003",
-  prompt=f"Give a short list of youth subcultures of people, who might use the following word: \"{searched_word}\"",
-  temperature=1,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-  )
-  ai_ages = openai.Completion.create(
-  model="text-davinci-003",
-  prompt=f"Give a list of ages of young people who might use that word, separated by commas: \"{searched_word}\"",
-  temperature=1,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-  )
-  ai_category = openai.Completion.create(
-  model="text-davinci-003",
-  prompt=f"Classify the following word into a category (word, topic, activity, person): \"{searched_word}\"",
-  temperature=1,
-  max_tokens=256,
-  top_p=1,
-  frequency_penalty=0,
-  presence_penalty=0
-  )
-  result.append(ai_definition['choices'][0]['text'])
-  result.append(ai_similar_words['choices'][0]['text'])
-  result.append(ai_subcultures['choices'][0]['text'])
-  result.append(ai_ages['choices'][0]['text'])
-  result.append(ai_category['choices'][0]['text'])
 
+  if is_in_dataset(searched_word):
+    #this word is in dataset
+    return words[searched_word]
+  else:
+    #AI generation
+    result = []
+    ai_definition = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Give a short definition of the word. If the definition is longer than 7 words, add new line symbols so that it would fit on a smartphone screen \"{searched_word}\"",
+    temperature=1,
+    max_tokens=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0
+    )
+    ai_similar_words = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Give 5 examples of words similar to, separated by commas \"{searched_word}\"",
+    temperature=1,
+    max_tokens=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0
+    )
+    ai_subcultures = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Give a short list of youth subcultures of people, who might use the following word: \"{searched_word}\"",
+    temperature=1,
+    max_tokens=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0
+    )
+    ai_ages = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Give a list of ages of young people who might use that word, separated by commas: \"{searched_word}\"",
+    temperature=1,
+    max_tokens=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0
+    )
+    ai_category = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Classify the following word into a category (word, topic, activity, person): \"{searched_word}\"",
+    temperature=1,
+    max_tokens=256,
+    top_p=1,
+    frequency_penalty=0,
+    presence_penalty=0
+    )
+    result.append(ai_definition['choices'][0]['text'])
+    result.append(ai_similar_words['choices'][0]['text'])
+    result.append(ai_subcultures['choices'][0]['text'])
+    result.append(ai_ages['choices'][0]['text'])
+    result.append(ai_category['choices'][0]['text'])
 
-  # beta searching with a dataset
-  # result = words[searched_word]
-  return result # It is a list of lists
+    return result # It is a list of lists
 
 def search_by_age(start_age, end_age):
   list_of_results = []
