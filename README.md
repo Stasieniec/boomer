@@ -1,4 +1,5 @@
 # boomer
+This is the final app file.
 
 To start the app, run main.py
 
